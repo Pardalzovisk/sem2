@@ -13,42 +13,44 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
+     @*        <th>
                 @Html.DisplayNameFor(model => model.ID)
-            </th>
+            </th> *@
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Email)
             </th>
-            <th>
+@*             <th>
                 @Html.DisplayNameFor(model => model.Telefone)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Cidade)
-            </th>
+            </th> *@
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+     @*        <td>
                 @Html.DisplayFor(modelItem => item.ID)
-            </td>
+            </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
+           
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
-            <td>
+@*             <td>
                 @Html.DisplayFor(modelItem => item.Telefone)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Cidade)
-            </td>
+            </td> *@
+      
             <td>
                 @Html.ActionLink("Edit", "Edit", new {  id=item.ID  }) |
                 @Html.ActionLink("Details", "Details", new {  id=item.ID }) |
